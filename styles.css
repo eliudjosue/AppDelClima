@@ -1,0 +1,104 @@
+*{
+      font-family: Arial, Helvetica, sans-serif; 
+}
+body {
+    background-color: rgb(255, 81, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#container {
+    background-color: #171123;
+    padding: 20px;
+    display: none;
+}
+
+#container > .block {
+    padding: 20px;
+}
+
+.block {
+    color:rgb(255, 81, 0) ;
+}
+
+.block:first-child {
+    background-color: rgb(255, 81, 0);
+    color: #171123 ;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #171123;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #171123;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
