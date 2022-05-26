@@ -8,7 +8,7 @@ const fetchData = position => {
        setWetherData(data)
     })
     
-    console.log(position);
+    // console.log(position);
 }
 
 const setWetherData = data => {
@@ -24,7 +24,7 @@ const setWetherData = data => {
     Object.keys(wetherData).forEach( key => {
         document.getElementById(key).textContent = wetherData[key];
     } )
-    console.log(data)
+    // console.log(data)
 
     onClear();
 }
