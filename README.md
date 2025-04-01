@@ -1,3 +1,104 @@
+# LandingPage
+
+# Instrucciones para levantar la aplicación con React y Vite
+
+Este proyecto está desarrollado con React y utiliza Vite como herramienta de construcción. A continuación, se describen los pasos necesarios para clonar el repositorio y levantar la aplicación localmente.
+
+## Requisitos previos
+
+Asegúrate de tener instalado lo siguiente en tu máquina:
+
+- **Node.js** (versión 14 o superior)
+- **npm** o **yarn** como gestor de paquetes
+
+## Pasos para levantar la aplicación
+
+1. **Clonar el repositorio**:
+
+   Abre tu terminal y clona el repositorio usando el siguiente comando:
+
+   ```bash
+   git clone https://gitlab.com/coa-sa/software/cva/ai-landingpage/frontend/landingpage.git
+   ```
+
+   Reemplaza `usuario/nombre-del-repo` con la URL del repositorio específico.
+
+2. **Entrar en el directorio del proyecto**:
+
+   Navega al directorio del proyecto clonado:
+
+   ```bash
+   cd nombre-del-repo
+   ```
+
+3. **Instalar las dependencias**:
+
+   Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
+
+   ```bash
+   npm install
+   ```
+
+   O, si prefieres usar **yarn**:
+
+   ```bash
+   yarn install
+   ```
+
+4. **Iniciar la aplicación en modo desarrollo**:
+
+   Una vez que se hayan instalado todas las dependencias, ejecuta:
+
+   ```bash
+   npm run dev
+   ```
+
+   O con **yarn**:
+
+   ```bash
+   yarn dev
+   ```
+
+   Esto iniciará el servidor de desarrollo de Vite. Deberías ver un mensaje en la terminal indicando que la aplicación está corriendo, junto con la URL local, típicamente `http://localhost:5173`.
+
+5. **Abrir la aplicación en el navegador**:
+
+   Abre tu navegador y ve a la URL proporcionada (por ejemplo, `http://localhost:5173`) para ver la aplicación en funcionamiento.
+
+## Scripts adicionales
+
+- **Construir la aplicación para producción**:
+
+   ```bash
+   npm run build
+   ```
+
+   O con **yarn**:
+
+   ```bash
+   yarn build
+   ```
+
+- **Previsualizar la aplicación construida**:
+
+   ```bash
+   npm run preview
+   ```
+
+   O con **yarn**:
+
+   ```bash
+   yarn preview
+   ```
+
+   Esto iniciará un servidor de vista previa de la versión construida de la aplicación.
+
+## Notas adicionales
+
+- Asegúrate de que las variables de entorno necesarias estén configuradas en un archivo `.env` si la aplicación depende de configuraciones específicas.
+- Revisa la documentación de Vite para personalizar la configuración de la herramienta según tus necesidades: [Vite Documentation](https://vitejs.dev/).
+
+  
 # 🚀 Despliegue de una app React (Vite) en Cloud Run
 
 Este proyecto contiene una aplicación React construida con Vite. A continuación, se detallan los pasos necesarios para construir y desplegar la imagen en **Cloud Run** utilizando Google Cloud Build y Container Registry.
